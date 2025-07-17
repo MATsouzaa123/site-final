@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fila de Solicitações</title>
+  <link rel="stylesheet" href="listaVirtual.css" />
+  <script src="6pedido.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="sidebar-geral">
+    <a href="0Pagina_inicial.html">Principal 🌐</a>
+    <a href="1Cadastrar-aluno.html">Aluno 👨‍🎓</a>
+    <a href="3registrar-saida.html">Saída 🚪</a>
+    <a href="4Cadastar-Professor.html">Professor 👩‍🏫</a>
+    <a href="professor/cadastrar-professor.html">Solicitação 📝</a>
+  </nav>
+
+
+  <nav class="menu-aluno" style="text-align:center; margin-top: 20px; margin-bottom: 20px;">
+    <a href="6listavirtual.html">Registrar</a>
+    <a href="6recebido.html">pedido</a>
+  </nav>
+
+
+  <div class="container">
+    <h1>Fila de Solicitações</h1>
+
+    <form class="forma_caixa" id="formulario" onsubmit="return false">
+      <label for="nome">Nome:</label>
+      <input id="nome" type="text" required />
+
+      <label for="motivo">Motivo:</label>
+      <input id="motivo" type="text" required />
+      
+<button id="adicionar" class="main-button">Adicionar</button>
+
+    </form>
+
+    <div id="fila" style="margin-top: 20px;"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deletar Aluno</title>
+  <link rel="stylesheet" href="style-aluno.css" />
+  <script src="2Deletar.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+ 
+  <nav class="sidebar-geral">
+  <a href="0Pagina_inicial.html"> Principal 🌐 </a>
+  <a href="1Cadastrar-aluno.html">Aluno 👨‍🎓</a>
+  <a href="3registrar-saida.html">Saída 🚪</a>
+  <a href="4Cadastar-Professor.html">Professor 👩‍🏫</a>
+  <a href="professor/cadastrar-professor.html">Solicitação 📝</a>
+  </nav>
+
+
+  <nav class="menu-aluno">
+ <a href="1Cadastrar-aluno.html">Cadastrar</a>
+    <a href="1listar-alunos.html">Listar</a>
+    <a href="1consultar-aluno.html">Consultar</a>
+    <a href="1deletar-aluno.html">Deletar</a>
+    <a href="1Atualizar-aluno.html">Atualizar</a>
+  </nav>
+
+
+  <div id="containerDeletar">
+    <h1>Deletar Aluno</h1><br><br>
+
+    <label for="cod">Digite o código do aluno:</label>
+    <input type="text" id="cod" placeholder="Ex: 123" />
+
+    <div style="margin-top: 25px;">
+      <button id="btnConfirmar">Deletar</button>
+    </div>
+
+    <div id="res" style="margin-top: 20px; font-weight: 500;"></div>
+  </div>
+
+</body>
+</html>

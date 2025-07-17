@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastrar Aluno</title>
+  <link rel="stylesheet" href="style-aluno.css" />
+  <script src="2Cadastar.js" defer ></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+ <nav class="sidebar-geral">
+ <a href="0Pagina_inicial.html"> Principal 🌐 </a>
+  <a href="1Cadastrar-aluno.html">Aluno 👨‍🎓</a>
+  <a href="3registrar-saida.html">Saída 🚪</a>
+  <a href="4Cadastar-Professor.html">Professor 👩‍🏫</a>
+  <a href="professor/cadastrar-professor.html">Solicitação 📝</a>
+</nav>
+
+
+  <nav class="menu-aluno" style="text-align:center; margin-top: 20px; margin-bottom: 20px;">
+ <a href="1Cadastrar-aluno.html">Cadastrar</a>
+    <a href="1listar-alunos.html">Listar</a>
+    <a href="1consultar-aluno.html">Consultar</a>
+    <a href="1deletar-aluno.html">Deletar</a>
+    <a href="1Atualizar-aluno.html">Atualizar</a>
+
+  </nav>
+
+  <div class="container">
+    <h1>Cadastrar Aluno</h1>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" name="sobrenome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone" required />
+
+      <label for="matricula">Matrícula:</label>
+      <input type="number" id="matricula" name="matricula" required />
+
+      <button id="Cadastrar" type="button">Cadastrar</button>
+
+      <div id="res"></div>
+    </div>
+
+</body>
+
+</html>

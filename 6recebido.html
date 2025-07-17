@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Inicial</title>
+  <link rel="icon" type="image/png" href="pug.png" />
+  <link rel="stylesheet" href="listaVirtual.css" />
+  <script src="recebido.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="sidebar-geral">
+    <a href="0Pagina_inicial.html">Principal 🌐</a>
+    <a href="1Cadastrar-aluno.html">Aluno 👨‍🎓</a>
+    <a href="3registrar-saida.html">Saída 🚪</a>
+    <a href="4Cadastar-Professor.html">Professor 👩‍🏫</a>
+    <a href="professor/cadastrar-professor.html">Solicitação 📝</a>
+  </nav>
+
+ 
+  <nav class="menu-aluno" style="text-align:center; margin-top: 20px; margin-bottom: 20px;">
+    <a href="6listavirtual.html">Registrar</a>
+    <a href="6recebido.html">pedido</a>
+  </nav>
+
+
+  <div class="container">
+    <h1>Fila Virtual</h1>
+
+    <div id="fila" style="margin: 20px 0;"></div>
+
+    <button type="button" class="main-button" onclick="limparFinalizados()">Limpar finalizados</button>
+  </div>
+</body>
+
+</html>

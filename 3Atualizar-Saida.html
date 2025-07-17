@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atualizar Saída</title>
+  <link rel="stylesheet" href="styleSaida.css" />
+  <script src="3Atualizar.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="sidebar-geral">
+    <a href="0Pagina_inicial.html">Principal 🌐</a>
+    <a href="1Cadastrar-aluno.html">Aluno 👨‍🎓</a>
+    <a href="3registrar-saida.html">Saída 🚪</a>
+    <a href="4Cadastar-Professor.html">Professor 👩‍🏫</a>
+    <a href="6listavirtual.html">Solicitação 📝</a>
+  </nav>
+
+  <nav class="menu-aluno" style="text-align:center; margin-top: 20px; margin-bottom: 20px;">
+   <a href="3registrar-saida.html">Registrar</a>
+    <a href="3Consultar-saida.html">Consultar</a>
+    <a href="3Listar-saida.html">Listar</a>
+    <a href="3Atualizar-saida.html">Atualizar</a>
+    <a href="3deletar.html">Deletar</a>
+  </nav>
+
+  <div class="container">
+    <h1>Atualizar Saída</h1>
+    <form action="#" method="post">
+      <label for="saidaId">ID da Saída:</label>
+      <input type="text" id="saidaId" name="saidaId" required />
+
+      <label for="dataSolicitacao">Data de solicitação:</label>
+      <input type="date" id="dataSolicitacao" required />
+
+      <label for="horaSaida">Hora da saída:</label>
+      <input type="time" id="horaSaida" required />
+
+      <label for="horaRetorno">Hora do retorno:</label>
+      <input type="time" id="horaRetorno" required />
+
+      <label for="localDestino">Local destino:</label>
+      <select id="localDestino" required>
+        <option value="" disabled selected>Escolha um local</option>
+        <option value="Almoxarifado">Almoxarifado</option>
+        <option value="Área externa">Área externa</option>
+        <option value="Auditório">Auditório</option>
+        <option value="Banheiro">Banheiro</option>
+        <option value="Beber água">Beber água</option>
+        <option value="Biblioteca">Biblioteca</option>
+        <option value="Cantina">Cantina</option>
+        <option value="Coordenação">Coordenação</option>
+        <option value="Direção">Direção</option>
+        <option value="Emergência">Emergência</option>
+        <option value="Enfermaria">Enfermaria</option>
+        <option value="Entrada principal">Entrada principal</option>
+        <option value="Estacionamento">Estacionamento</option>
+        <option value="Ginásio">Ginásio</option>
+        <option value="Laboratório de Ciências">Laboratório de Ciências</option>
+        <option value="Laboratório de Informática">Laboratório de Informática</option>
+        <option value="Laboratório de Programação">Laboratório de Programação</option>
+        <option value="Pátio">Pátio</option>
+        <option value="Portaria">Portaria</option>
+  
+      </select>
+
+      <label for="motivo">Motivo:</label>
+      <input type="text" id="motivo" required />
+
+      <label for="status">Status:</label>
+      <input type="text" id="status" required />
+
+      <label for="nomeAluno">Nome do Aluno:</label>
+      <input type="text" id="nomeAluno" required />
+
+      <label for="aluno_cod">Código do Aluno:</label>
+      <input type="text" id="aluno_cod" required />
+
+      <label for="nomeProfessor">Nome do Professor:</label>
+      <input type="text" id="nomeProfessor" required />
+
+      <label for="professor_cod">Código do Professor:</label>
+      <input type="text" id="professor_cod" required />
+
+      <button id="atualizar" type="button">Atualizar</button>
+      <div id="res"></div>
+    </form>
+  </div>
+</body>
+</html>
